@@ -1,9 +1,13 @@
-对LINCS数据中每一种处理(剔除DMSO)的基因差异表达值和pathway上基因表达值进行KS检验，计算score值。
-1、计算LINCS数据每个处理（每列）的score
-2、合并所有列
-3、所有药物处理score归一化后 
-※按 |score|  从大到小排序。包含了可能治疗和加剧疾病的药物。
-※只取 score<0 数据，按 |score|  从大到小排序。只包含可能治疗的药物。
+#KS test was performed on the differential gene expression value of each treatment (excluding DMSO) in the LINCS data and the gene expression value on the pathway, and the KS score value was calculated.  
 
-对一种药物（drug_name）多个处理数据，取score值最小列，按score值从小到大对药物排序。
+1. Calculate the score of each processing (each column) of LINCS data  
 
+2. Combine all columns.  
+
+3. After normalization of all drug treatment scores.  
+
+※ Sort by |score| from largest to smallest. Contains compounds that may treat and exacerbate the disease.  
+
+※Only take score<0 data and sort by |score| from large to small. Contains only drugs that may be treated.  
+
+For multiple processing data of a drug (drug_name), take the column with the smallest score value, and sort the drugs according to the score value from small to large.
