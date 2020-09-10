@@ -1,4 +1,4 @@
-# pathway-and-lincs-data-KS-test
+# KS of pathways related and LINCS signatures gene-FC
 
 including two steps:
 1.extracting pathways related genes Fold Change data.
